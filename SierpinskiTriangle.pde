@@ -1,7 +1,7 @@
 public void setup()
 {
   size(300,300);
-  background(153, 102, 255);
+  background(51, 204, 255);
 }
 public void draw()
 {
@@ -11,11 +11,9 @@ public void draw()
 
 public void sierpinski(int x, int y, int len) 
 {
-  int r = 255;
-  int g = 255;
-  int b = 255;
-  if(len < 20){
+  if(len < 5){
     triangle(x,y,x+len,y,x+len/2,y-len);
+    fill(255, 204, 0);
   }
   else
   {
